@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/f_i1"
+    tools:context=".RegistroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="195dp"
+            android:layout_height="103dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:src="@drawable/im1_e" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/lblPretitulo"
+            android:textColor="#83992F"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_margin="1dp"
+            tools:layout_editor_absoluteX="-14dp"
+            tools:layout_editor_absoluteY="173dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="3px">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_email_24">
+            </ImageView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="600px"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txtCorreo"
+                    android:layout_marginLeft="15px"
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/txtCorreo" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="5px">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/usuario">
+            </ImageView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="600px"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txtUsuario"
+                    android:layout_marginLeft="15px"
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtUsuario" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="1px">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/clave">
+            </ImageView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="600px"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+                <EditText
+                    android:id="@+id/txtClave"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15px"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtClave"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="4px">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_account_circle_24">
+            </ImageView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="600px"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txtNombre"
+                    android:layout_marginLeft="15px"
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtNombre" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="4px">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/usuario">
+            </ImageView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="600px"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txtApellido"
+                    android:layout_marginLeft="15px"
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtApellido" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="4px">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_phone_iphone_24">
+            </ImageView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="600px"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/txtTelefono"
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15px"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:hint="@string/txtTelefono" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="4px">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_location_on_24">
+            </ImageView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="600px"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txtDireccion"
+                    android:layout_marginLeft="15px"
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtDireccion" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/btnContinuar"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="700px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="50px"
+                android:text="@string/btnContinuar"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:background="@drawable/mi_boton"/>
+            <Button
+                android:id="@+id/btnAtras"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="700px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="50px"
+                android:text="@string/btnAtras"
+                android:textAllCaps="false"
+                android:background="@drawable/mi_boton2"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

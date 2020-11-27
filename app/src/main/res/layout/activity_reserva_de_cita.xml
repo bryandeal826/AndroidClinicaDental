@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/f_i1"
+    tools:context=".ReservaDeCita">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:text="@string/lblReserva"
+            android:textColor="#071907"
+            android:layout_margin="50dp"
+            android:textStyle="bold"
+            android:textSize="25dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="50px">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="600px"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txtfechaReserva"
+                    android:layout_marginLeft="15px"
+                    android:layout_width="600px"
+                    android:layout_height="88px"
+                    android:inputType="date"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:focusable="false"
+                    android:maxLines="1"
+                    android:background="@drawable/border_editext"
+                    android:hint="@string/txtfechaReserva"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/iconfechaReserva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:src="@drawable/calendario"></ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="600px"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lblTurno"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                    android:textAlignment="center" />
+                <Spinner
+                    android:id="@+id/spTurno"
+                    android:layout_width="210dp"
+                    android:layout_height="80px"
+                    android:layout_weight="1"
+                    android:layout_margin="15dp"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="16dp"
+                    android:background="@drawable/style_spinner1"
+                    android:entries="@array/spTurno"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnSeguir"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_margin="50dp"
+            android:background="@drawable/mi_boton"
+            android:text="@string/btnSeguir"
+            android:textAllCaps="false"
+            android:textSize="15sp" />
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

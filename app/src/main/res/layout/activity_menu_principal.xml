@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/f_i1"
+    tools:context=".MenuPrincipal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="282dp"
+            android:layout_height=  "137dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/im1_e"
+            android:layout_margin="50px"
+            android:contentDescription="TODO" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="30dp">
+
+            <ImageButton
+                android:id="@+id/btnReservarCita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/cita1"
+                android:contentDescription="TODO" />
+
+            <ImageButton
+                android:id="@+id/btnDetalleCita"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="TODO"
+                android:src="@drawable/anular1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp">
+            <ImageButton
+                android:id="@+id/Nosotros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/contac1"
+                android:contentDescription="TODO" />
+            <ImageButton
+                android:id="@+id/Ubicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_weight="1"
+                android:src="@drawable/map" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnCerrarSesion"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_margin="50px"
+                android:layout_weight="1"
+                android:background="@drawable/mi_boton2"
+                android:text="@string/btnCerrarSesion"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/CopyRight"
+            android:layout_marginBottom="10px"
+            android:gravity="bottom|center_horizontal"
+            android:layout_gravity="bottom"
+            style="@style/TextAppearance.AppCompat.Medium"     />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

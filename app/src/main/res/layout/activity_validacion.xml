@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/f_i1"
+    tools:context=".ValidacionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="20dp">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="282dp"
+            android:layout_height="137dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/im1_e" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/lblPretitulo"
+            android:textColor="#83992F"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="-14dp"
+            tools:layout_editor_absoluteY="173dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:text="@string/lblValida"
+            android:textColor="#071907"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="-14dp"
+            tools:layout_editor_absoluteY="173dp" />
+
+
+        <TextView
+            android:id="@+id/lblMensajeValida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:text="@string/lblMensajeValida"
+            android:textColor="#071907"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="-14dp"
+            tools:layout_editor_absoluteY="173dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_vpn_key_24">
+            </ImageView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="400px"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/txtCodigo"
+                    android:layout_width="400px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15px"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:hint="@string/txtCodigo"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnValidar"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_margin="50px"
+                android:layout_weight="1"
+                android:background="@drawable/mi_boton"
+                android:text="@string/btnValidar"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAtras"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="130dp"
+            android:background="@drawable/mi_boton2"
+            android:text="@string/btnAtras"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

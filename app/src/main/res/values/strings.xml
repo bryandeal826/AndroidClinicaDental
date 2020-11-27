@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Clinica Dent</string>
+    <string name="lblPretitulo">Descubre la sonrisa que llevas dentro</string>
+    <string name="txtCorreo">Ingrese Correo</string>
+    <string name="txtUsuario">Ingrese Usuario</string>
+    <string name="txtClave">Ingrese Clave</string>
+    <string name="txtNombre">Ingrese Nombres</string>
+    <string name="txtApellido">Ingrese Apellidos</string>
+    <string name="txtTelefono">Ingrese Teléfono</string>
+    <string name="txtDireccion">Ingrese Dirección</string>
+    <string name="txtIngresaCorreo">Ingrese su correo electrónico</string>
+
+    <string name="btnSalir">SALIR</string>
+    <string name="btnIngresar">INGRESAR</string>
+    <string name="btnRegistrar">Registrarse</string>
+    <string name="btnEnviar">ENVIAR</string>
+    <string name="btnVolver">VOLVER</string>
+
+
+    <string name="RecordarClave">Recordar Clave</string>
+    <string name="CopyRight">Derechos Reservados - 2020</string>
+    <string name="CopyRight2">
+        Versión Beta 1.0.0\n\n
+        Angel Dent Móvil es una aplicación desarrollada por estudiantes de la upn
+        \n\nDerechos Reservados - 2020 </string>
+
+    <string name="lblValida">Valida tu cuenta!</string>
+    <string name="lblRecuperala">Recupérala</string>
+    <string name="lblRecuperala2">Recuperar</string>
+    <string name="lblRegistro">Registrarse</string>
+    <string name="lblMensajeRecuperala">Se le enviará sus datos de acceso al correo registrado.</string>
+    <string name="lblMensajeValida"></string>
+    <string name="lblRegistrate">Regístrate</string>
+    <string name="lbltexto1">Acerca de Nosotros: </string>
+    <string name="lbltexto2"> Más de 20 años y miles de sonrisas alrededor del Perú nos respaldan como la primera y mejor Clínica Dental del país. ¡Compruébalo tu mismo!</string>
+    <string name="lbltexto3"> http://www.angeldent.pe/</string>
+    <string name="lbltexto4"> angeldent@gmail.com</string>
+
+    <string name="lblReserva">Reserva de Citas </string>
+
+
+    <string name="btnContinuar">REGISTRARSE</string>
+    <string name="btnContinuar1">CONTINUAR</string>
+    <string name="btnAtras">ATRAS</string>
+
+    <string name="lblOlvide">¿No tienes una cuenta?</string>
+    <string name="lblOlvideContraseña">¿Olvidaste tu contraseña?</string>
+
+    <string name="txtCodigo">Ingrese código</string>
+    <string name="btnValidar">VALIDAR</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="btnCerrarSesion">CERRAR SESIÓN</string>
+    <string name="txtfechaReserva"></string>
+    <string name="lblTurno">Seleccione el turno:</string>
+    <string-array name="spTurno">
+        <item>Seleccione una opción</item>
+        <item>Mañana</item>
+        <item>Tarde</item>
+    </string-array>
+    <string name="btnSeguir">CONTINUAR</string>
+    <string name="lblDentistasDisponibles">Dentistas Disponibles</string>
+
+    <string name="lblItemNombres">Nombre:</string>
+    <string name="lblItemApellidos">Apellidos:</string>
+    <string name="lblItemCorreo">Email:</string>
+    <string name="lblSeleccionarHora">Seleccione una opción:</string>
+    <string name="lblItemDisponibilidad">Ver Disponibilidad</string>
+
+    <string name="lblRegistrarCita">Registrar Cita</string>
+    <string name="lblFecha">Fecha:</string>
+    <string name="lblDoctor">Dentista:</string>
+    <string name="lblHora">Hora:</string>
+    <string name="lblEstado">Estado:</string>
+    <string name="btnRegistrarCita">REGISTRAR CITA</string>
+
+    <string name="lblDetalleCita">Cita Reservada</string>
+    <string name="lblPaciente">Paciente:</string>
+    <string name="lblIDCita">ID_CITA:</string>
+    <string name="btnAnularCita">ANULAR</string>
+</resources>

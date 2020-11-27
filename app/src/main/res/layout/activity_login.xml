@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/f_i1"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="282dp"
+            android:layout_height="137dp"
+            android:layout_margin="20dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/im1_e" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/lblPretitulo"
+            android:textColor="#83992F"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="40px">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/usuario">
+            </ImageView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="600px"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txtUsuario"
+                    android:layout_marginLeft="15px"
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtUsuario" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="20px">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/clave">
+            </ImageView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="600px"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+                <EditText
+                    android:id="@+id/txtClave"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15px"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtClave"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="40px">
+            <TextView
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:textColor="#071907"
+                android:text="@string/lblOlvideContraseña" />
+            <TextView
+                android:id="@+id/lblRecuperala"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+
+                android:text="@string/lblRecuperala"
+                android:textAllCaps="false"
+                android:textColor="#FF0000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/btnIngresar"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="700px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="50px"
+                android:text="@string/btnIngresar"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:background="@drawable/mi_boton"/>
+            <Button
+                android:id="@+id/btnSalir"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="700px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="50px"
+                android:text="@string/btnSalir"
+                android:textAllCaps="false"
+                android:background="@drawable/mi_boton2"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="40px">
+
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+
+            android:textColor="#071907"
+            android:text="@string/lblOlvide"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/lblRegistrarse"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+
+            android:text="@string/lblRegistrate"
+            android:textAllCaps="false"
+            android:textColor="#FF0000" />
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/CopyRight"
+            android:layout_marginBottom="10px"
+            android:gravity="bottom|center_horizontal"
+            android:layout_gravity="bottom"
+            style="@style/TextAppearance.AppCompat.Medium"     />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
